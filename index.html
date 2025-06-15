@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact Book App</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body onload="fetchContacts()">
         <div id="table">Contacts loading...</div>
@@ -20,7 +21,6 @@
                 })
                 .then(function(data) {
                    displayOutput(data);
-                   //console.log(data);
                 })
             }
 
