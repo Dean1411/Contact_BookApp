@@ -2,13 +2,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Book App</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body onload="fetchContacts()">
+    <div class="contact-box">
         <div id="table">Contacts loading...</div>
+        <br/>
         <button id="refresh" type="button">Refresh</button>
         <button id="addContact" type="button">Add Contact</button>
+    </div>
 
         <script src="config.js"></script>
         <script>

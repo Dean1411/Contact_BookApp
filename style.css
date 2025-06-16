@@ -1,11 +1,145 @@
-html{
-    background-color: aliceblue;
+body {
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-#table, td{
-    width: 0;
+.container, .form-box, .contact-box, .form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    box-sizing: border-box;
+}
+
+.form-box label,
+.form-container label,
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.form-box input[type="text"],
+.form-box input[type="file"],
+.form-container input[type="text"],
+.form-container input[type="file"],
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#avatarImage img,
+#table img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#table table {
+    width: 100%;
     border-collapse: collapse;
-    margin: 20px;
-    padding: 5%;
 }
 
+#table tr {
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+#table tr:hover {
+    background-color: #f9f9f9;
+}
+
+#table td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+#table td h5 {
+    margin: 0;
+}
+
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#refresh {
+    background-color: #007bff;
+    color: white;
+}
+
+#addContact {
+    background-color: #28a745;
+    color: white;
+}
+
+#submitForm {
+    background-color: #007bff;
+    color: white;
+}
+
+#homeLink {
+    background-color: #28a745;
+    color: white;
+}
+
+#editContact {
+    background-color: #ffc107;
+    color: black;
+}
+
+#deleteContact {
+    background-color: #dc3545;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .container,
+    .form-box,
+    .contact-box,
+    .form-container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #table td h5 {
+        font-size: 14px;
+    }
+
+    #avatarImage img {
+        width: 100px;
+    }
+}
